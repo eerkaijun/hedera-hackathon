@@ -1,0 +1,14 @@
+language: node_js
+node_js: 
+  - "12.14"
+branches:
+  only:
+    - main
+script:
+  - npm install
+  - ng build
+before_install:
+  - cd trinsic 
+  - npm install - g firebase-tools
+after_success: 
+  - firebase deploy --token $FIREBASE_TOKEN --only hosting:ssi-identity-portal

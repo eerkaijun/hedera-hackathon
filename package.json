@@ -1,0 +1,21 @@
+{
+  "name": "digital-identity",
+  "version": "1.0.0",
+  "description": "A privacy-preserving digital identity solution that uses self-sovereign verifiable credentials.",
+  "main": "index.js",
+  "scripts": {
+    "heroku-prebuild": "cd pilot-server && npm install",
+    "start": "cd pilot-server && npm start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eerkaijun/digital-identity.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eerkaijun/digital-identity/issues"
+  },
+  "homepage": "https://github.com/eerkaijun/digital-identity#readme"
+}
